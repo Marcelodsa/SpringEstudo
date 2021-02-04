@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@SuppressWarnings("unused")
 public class TopicoDto {
 
     private Long id;
@@ -20,13 +21,9 @@ public class TopicoDto {
         this.dataCriacao= topico.getDataCriacao();
     }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() { return id; }
 
-    public String getTitulo() {
-        return titulo;
-    }
+    public String getTitulo() { return titulo; }
 
     public String getMensagem() {
         return mensagem;
